@@ -19,6 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     CircleAnimationView *animationView = [[CircleAnimationView alloc] initWithFrame:CGRectMake(150, 200, 24, 24)];
+    animationView.circleType = CircleTypeRing;
     [self.view addSubview:animationView];
 }
 

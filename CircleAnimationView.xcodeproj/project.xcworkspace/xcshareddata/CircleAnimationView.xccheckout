@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3FA6C143-1A3B-4A3E-A0DF-7C1CCE17DDE7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CircleAnimationView</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>66ABCD11F87505D72948CE18B6949368CA671A62</key>
+		<string>https://github.com/cocoa-chen/CircleAnimationView.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CircleAnimationView.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>66ABCD11F87505D72948CE18B6949368CA671A62</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/cocoa-chen/CircleAnimationView.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>66ABCD11F87505D72948CE18B6949368CA671A62</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>66ABCD11F87505D72948CE18B6949368CA671A62</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CircleAnimationView</string>
+		</dict>
+	</array>
+</dict>
+</plist>

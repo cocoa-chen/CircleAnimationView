@@ -21,6 +21,8 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        _circleType = CircleTypeRing;
+        _animatingRoundColor = [UIColor magentaColor];
         _circleColor = [UIColor colorWithRed:31/255.f green:100/255.f blue:1 alpha:1.f];
         _zoomFactor = 6;
         [self setup];
@@ -45,15 +47,27 @@
     self.ringLayer.fillColor = nil;
     self.ringLayer.lineWidth = 1.f;
     
-    [self.layer addSublayer:self.circleLayer];
     [self.layer addSublayer:self.ringLayer];
+    [self.layer addSublayer:self.circleLayer];
 }
 - (void)setCircleColor:(UIColor *)circleColor
 {
     _circleColor = circleColor;
     self.circleLayer.strokeColor = _circleColor.CGColor;
     self.circleLayer.fillColor = _circleColor.CGColor;
-    self.ringLayer.strokeColor = _circleColor.CGColor;
+    if (_circleType == CircleTypeRing) {
+        self.ringLayer.strokeColor = _circleColor.CGColor;
+    }
+}
+- (void)setCircleType:(CircleType)circleType
+{
+    _circleType = circleType;
+    if (_circleType == CircleTypeRound) {
+        self.ringLayer.fillColor = _animatingRoundColor.CGColor;
+        self.ringLayer.strokeColor = _animatingRoundColor.CGColor;
+    }else if (_circleType == CircleTypeRing) {
+        self.ringLayer.strokeColor = _circleColor.CGColor;
+    }
 }
 - (void)startAnimation
 {
